@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopNest - Homepage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" alt="Logo">
+        <span>Stackly</span>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="#" class="cta-btn">Sign In</a>
+    </div>
+  </header>
+
+</body>
+</html>
+<style>/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Container */
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Inner Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Navigation Menu */
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+/* Call to Action Button */
+.cta-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .cta-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .logo span {
+    font-size: 20px;
+  }
+}
+</style>
